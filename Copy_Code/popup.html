@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Snippet Manager</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="codemirror/codemirror.css">
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <h2>Languages</h2>
+      <ul id="languageList"></ul>
+    </div>
+
+    <div id="main">
+      <h1>Code Snippet Manager</h1>
+
+      <!-- Form to add/edit snippet -->
+      <div id="snippetForm">
+        <input type="text" id="snippetTitle" placeholder="Snippet Title">
+        <input type="text" id="snippetLanguage" placeholder="Language">
+        <input type="text" id="snippetTags" placeholder="Tags (comma-separated)">
+        <textarea id="code" placeholder="Enter your code here..."></textarea>
+        <button id="saveSnippet">Save Snippet</button>
+        <button id="clearEditor">Clear Editor</button>
+
+      </div>
+
+      <!-- Snippet list -->
+      <div id="snippetList">
+        
+      </div>
+      
+    </div>
+  </div>
+
+  <script src="codemirror/codemirror.js"></script>
+  <script src="codemirror/javascript.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
